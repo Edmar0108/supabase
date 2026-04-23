@@ -415,6 +415,11 @@ services:
       # chat-tickets (Chatbot IA → OpenAI GPT-4o-mini). Definir en .env del stack.
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       ERP_FRONTEND_ORIGIN: ${ERP_FRONTEND_ORIGIN:-*}
+
+      VAPID_PUBLIC_KEY: ${VAPID_PUBLIC_KEY:-}
+      VAPID_PRIVATE_KEY: ${VAPID_PRIVATE_KEY:-}
+      VAPID_SUBJECT: ${VAPID_SUBJECT:-mailto:admin@orbita.com}
+
     command:
       [
         "start",
